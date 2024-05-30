@@ -30,5 +30,5 @@ class Owner:
 
     def get_sorted_pets(self):
 
-        return sorted(self.pets, key=lambda pet: pet.name)
+        return sorted([owner for owner in Pet.all], key=lambda pet: pet.name)
     
